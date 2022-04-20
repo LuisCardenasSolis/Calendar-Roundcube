@@ -167,3 +167,14 @@ ___
 	            intval($event['all_day']),
 	            $event['_recurrence'],
 	~~~
+	
+	Para parchar todo el archivo directamente simplemente reemplazar el driver por el archivo ya corregido de este repositorio:
+	
+	~~~
+	cd /pathTo/roundcubemail
+	cd plugins/calendar/drivers/database/
+
+	mv database_driver.php database_driver.php.old
+
+	wget https://raw.githubusercontent.com/LuisCardenasSolis/Calendar-Roundcube/main/database_driver.php
+	~~~
